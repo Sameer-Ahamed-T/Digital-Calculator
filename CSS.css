@@ -1,12 +1,18 @@
+
 body
 {
-  align-items: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:black;
+    color:aliceblue;
 }
 .btn
 {
   padding:10px;
   border:none;
-  border-radius:50px;
+  border-radius:25px;
   background-color:gray;
   color:white;
 }
@@ -15,3 +21,7 @@ body
   transform: scale(1.15);
   transition: 0.5s;
 }  
+.i
+{
+    border:none;
+}
