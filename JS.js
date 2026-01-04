@@ -1,14 +1,14 @@
 let t="";
-function update()
+function update(val)
 {
-  t+=document.getElementById("input").value;
+  t+=val;
+  document.getElementById("input").value=t;
 }
 function evaluateMath(expr) {
   return Function("return " + expr)();
 }
 function Equals()
 {
-  let e=document.getElementById("input");
-  e.value = evaluateMath(t);
+  document.getElementById("input").value=evaluateMath(t);
   t = "";
 }
